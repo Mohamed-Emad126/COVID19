@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/more"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more"
+        >
+        <menu>
+            <item android:id="@+id/share"
+                android:title="@string/share_app"
+                android:orderInCategory="1"
+                app:showAsAction="never"
+                />
+
+            <item android:id="@+id/licences"
+                android:title="@string/licences"
+                android:orderInCategory="3"
+                app:showAsAction="never"
+                />
+            <item android:id="@+id/about"
+                android:title="@string/about"
+                android:orderInCategory="2"
+                app:showAsAction="never"
+                />
+        </menu>
+    </item>
+
+</menu>

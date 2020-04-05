@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/egyptFragment">
+
+    <fragment
+        android:id="@+id/egyptFragment"
+        android:name="com.memad.covid_19.UI.Fragments.EgyptFragment"
+        android:label="fragment_egypt"
+        tools:layout="@layout/fragment_egypt" />
+    <fragment
+        android:id="@+id/worldFragment"
+        android:name="com.memad.covid_19.UI.Fragments.WorldFragment"
+        android:label="fragment_world"
+        tools:layout="@layout/fragment_world" />
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="com.memad.covid_19.UI.Fragments.SymptomsFragment"
+        android:label="fragment_symptoms"
+        tools:layout="@layout/fragment_symptoms" />
+    <fragment
+        android:id="@+id/emergencyFragment"
+        android:name="com.memad.covid_19.UI.Fragments.EmergencyFragment"
+        android:label="fragment_emergency"
+        tools:layout="@layout/fragment_emergency" />
+</navigation>

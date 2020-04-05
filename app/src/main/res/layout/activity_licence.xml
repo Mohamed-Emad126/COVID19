@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".UI.Activities.LicenceActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/licence_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/licence_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/licences"
+            app:titleTextColor="@android:color/white"
+            android:theme="@style/Widget.AppCompat.PopupMenu.Overflow"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="8dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/stay_home_shadow" />
+
+            <TextView
+                android:id="@+id/name_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"
+                    android:background="#F5F5F5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_resource"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/flat1_icons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flat_icons_site"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:text="Ambulance,Doctor and heart icons: \nIcon made by Freepik from www.flaticon.com"
+                    android:textColor="?android:textColorSecondary" />
+                <TextView
+                    android:id="@+id/earth"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:text="earth icon: \nIcon made by Turkkub from www.flaticon.com"
+                    android:textColor="?android:textColorSecondary" />
+                <TextView
+                    android:id="@+id/sphinx"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:text="sphinx icon: \nIcon made by Darius Dan from www.flaticon.com"
+                    android:textColor="?android:textColorSecondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp">
+
+                <View
+                    android:id="@+id/dividerx"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"
+                    android:background="#F5F5F5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gif_resources"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tex4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lottie Files"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tex5"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://creativecommons.org/licenses/by/4.0/"
+                    android:textColor="?android:textColorSecondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp">
+
+                <View
+                    android:id="@+id/dividerxx"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"
+                    android:background="#F5F5F5" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gifsx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Libraries"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/glide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Glide"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/glid"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://bumptech.github.io/glide/"
+                    android:textColor="?android:textColorSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lottie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LottieAnimation"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/linklottie"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="http://airbnb.io/lottie/#/README"
+                    android:textColor="?android:textColorSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Navigation_compounent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Navigation Component"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/nav"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://developer.android.com/guide/navigation"
+                    android:textColor="?android:textColorSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/retrofit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retrofit"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/ret"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://square.github.io/retrofit/"
+                    android:textColor="?android:textColorSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Material Design Compunent"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/md"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://material.io/"
+                    android:textColor="?android:textColorSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/viewModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ViewModel and LiveData"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/vm"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:text="https://developer.android.com/topic/libraries/architecture/viewmodel.html"
+                    android:textColor="?android:textColorSecondary" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?android:textColorSecondary"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/made_with_love"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
