@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_world" />
     <fragment
         android:id="@+id/symptomsFragment"
-        android:name="com.memad.covid_19.UI.Fragments.SymptomsFragment"
+        android:name="com.memad.covid_19.UI.Fragments.AdvicesFragment"
         android:label="fragment_symptoms"
         tools:layout="@layout/fragment_symptoms" />
     <fragment

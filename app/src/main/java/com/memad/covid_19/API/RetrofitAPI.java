@@ -11,11 +11,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitAPI {
 
-    /**
-     * <a href="https://iconscout.com/icons/health" target="_blank">Health Icon</a>
-     * by <a href="https://iconscout.com/contributors/jemismali">Jemis Mali</a> on
-     * <a href="https://iconscout.com">Iconscout</a>
-     */
     private static RetrofitAPI ourInstance;
     private static Retrofit base;
     private static COVIDClient covidClient;

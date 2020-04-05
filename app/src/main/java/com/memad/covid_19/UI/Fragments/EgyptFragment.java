@@ -115,7 +115,7 @@ public class EgyptFragment extends Fragment {
                 active.setText("-");
                 critical.setText("-");
                 if(NetworkUtils.getConnectivityStatus(
-                        requireActivity().getApplicationContext()) != 0){
+                        requireActivity()) != 0){
 
                     Toast.makeText(requireActivity().getApplicationContext(),
                             R.string.wrong, Toast.LENGTH_SHORT).show();

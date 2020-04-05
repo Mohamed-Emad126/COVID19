@@ -102,7 +102,7 @@
                     android:autoLink="web"
                     android:textColorLink="@color/colorPrimaryDark"
                     android:layout_height="wrap_content"
-                    android:text="Ambulance,Doctor and heart icons: \nIcon made by Freepik from www.flaticon.com"
+                        android:text="Ambulance,Doctor, Error, Network Error and Heart icons: \nIcon made by Freepik from www.flaticon.com"
                     android:textColor="?android:textColorSecondary" />
                 <TextView
                     android:id="@+id/earth"
@@ -111,7 +111,7 @@
                     android:autoLink="web"
                     android:textColorLink="@color/colorPrimaryDark"
                     android:layout_height="wrap_content"
-                    android:text="earth icon: \nIcon made by Turkkub from www.flaticon.com"
+                    android:text="Earth icons: \nIcon made by Turkkub from www.flaticon.com"
                     android:textColor="?android:textColorSecondary" />
                 <TextView
                     android:id="@+id/sphinx"
@@ -120,7 +120,7 @@
                     android:autoLink="web"
                     android:textColorLink="@color/colorPrimaryDark"
                     android:layout_height="wrap_content"
-                    android:text="sphinx icon: \nIcon made by Darius Dan from www.flaticon.com"
+                    android:text="sphinx icons: \nIcon made by Darius Dan from www.flaticon.com"
                     android:textColor="?android:textColorSecondary" />
             </LinearLayout>
 
@@ -193,31 +193,6 @@
                 android:textStyle="bold"
                 android:layout_marginTop="16dp"
                 android:textColor="@android:color/black" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/glide"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Glide"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/glid"
-                    android:layout_width="wrap_content"
-                    android:textSize="12sp"
-                    android:layout_height="wrap_content"
-                    android:autoLink="web"
-                    android:textColorLink="@color/colorPrimaryDark"
-                    android:text="https://bumptech.github.io/glide/"
-                    android:textColor="?android:textColorSecondary" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

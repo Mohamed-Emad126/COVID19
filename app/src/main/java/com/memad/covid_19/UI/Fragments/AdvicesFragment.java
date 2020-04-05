@@ -13,9 +13,9 @@ import com.memad.covid_19.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SymptomsFragment extends Fragment {
+public class AdvicesFragment extends Fragment {
 
-    public SymptomsFragment() {
+    public AdvicesFragment() {
         // Required empty public constructor
     }
 

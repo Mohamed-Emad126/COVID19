@@ -17,7 +17,7 @@
         android:icon="@drawable/world"/>
 
     <item android:id="@+id/symptomsFragment"
-        android:title="@string/symptoms"
+        android:title="@string/advices"
         app:showAsAction="always"
         android:orderInCategory="3"
         android:icon="@drawable/doctor"/>

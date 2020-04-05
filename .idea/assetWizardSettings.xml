@@ -161,8 +161,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_emergency" />
-                            <entry key="sourceFile" value="E:\Programming\Android\Materials\LottieAnim\emergency.svg" />
+                            <entry key="outputName" value="ic_error" />
+                            <entry key="sourceFile" value="E:\Programming\Android\Materials\LottieAnim\error.svg" />
                           </map>
                         </option>
                       </PersistentState>

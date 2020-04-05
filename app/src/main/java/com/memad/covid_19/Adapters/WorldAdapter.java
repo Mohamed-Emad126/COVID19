@@ -26,13 +26,13 @@ public class WorldAdapter extends RecyclerView.Adapter<WorldAdapter.WorldViewHol
         }
     }
 
-    public void setCountriesList(List<Country> CountrysList) {
+    public void setCountriesList(List<Country> CountriesList) {
         if (this.CountrysList == null) {
-            this.CountrysList = CountrysList;
+            this.CountrysList = CountriesList;
             notifyDataSetChanged();
         } else {
             int lastFinish = this.CountrysList.size() - 1;
-            this.CountrysList.addAll(CountrysList);
+            this.CountrysList.addAll(CountriesList);
             notifyItemInserted(lastFinish);
             //notifyItemRangeInserted(lastFinish, newFinish);
         }

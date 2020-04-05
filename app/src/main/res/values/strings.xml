@@ -8,7 +8,7 @@
     <string name="share_app">Share App</string>
     <string name="licences">Licences</string>
     <string name="about">About</string>
-    <string name="symptoms">Symptoms</string>
+    <string name="advices">Advices</string>
     <string name="emergency">Emergency</string>
     <string name="image_resource">Image Resources</string>
     <string name="flat_icons_site">Flat Icons Site</string>
@@ -26,7 +26,6 @@
     <string name="deaths_per_one_million">Deaths Per One Million</string>
     <string name="cases_per_one_million">cases Per One Million</string>
     <string name="total_deaths">Total Deaths</string>
-    <string name="today_cases">Today cases</string>
     <string name="wrong">Something went Wrong</string>
     <string name="network_connection">No Network Connection</string>
     <string name="total_cases_c">Total Cases:</string>
@@ -46,4 +45,10 @@
     <string name="permission_reason">This permission is needed so that The app can Call the Emergency Number</string>
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
+    <string name="today_deaths">Today Deaths</string>
+    <string name="no_network_con">No Network Connection\ncheck your connection and try again</string>
+    <string name="refresh">REFRESH</string>
+    <string name="today_cases">Today cases</string>
+    <string name="something_went_wrong_">Something went wrong\ncheck your Internet connection and Try again later!</string>
+    <string name="update_no_connection">No Network Connection to Update</string>
 </resources>
