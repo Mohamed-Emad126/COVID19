@@ -68,6 +68,7 @@
     <property name="BundleExportedModule" value="app" />
     <property name="ExportApk.ApkPath" value="E:\Programming\Android\Projects\COVID19\app" />
     <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV2" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Key" />
