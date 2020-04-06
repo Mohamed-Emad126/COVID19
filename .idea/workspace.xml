@@ -10,56 +10,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef1e2c4-3c09-47aa-a623-f75a47b2fe45" name="Default Changelist" comment="Complete WorldFragment....">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/Adapters/AdvicesAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/Models/Advice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/advice_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/advice.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" afterDir="false" />
+    <list default="true" id="1ef1e2c4-3c09-47aa-a623-f75a47b2fe45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/Adapters/WorldAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/Adapters/WorldAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Activities/AboutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Activities/AboutActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Activities/LicenceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Activities/LicenceActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Activities/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/AdvicesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/AdvicesFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/EgyptFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/EgyptFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/EmergencyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/EmergencyFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/WorldFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/UI/Fragments/WorldFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/ViewModels/EgyptViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/ViewModels/EgyptViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/ViewModels/WorldViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/memad/covid_19/ViewModels/WorldViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_symptoms.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_advices.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_world.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_world.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,10 +54,10 @@
     </option>
   </component>
   <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
     <option name="KEY_STORE_PATH" value="E:\Programming\Android\Key\Key.jks" />
     <option name="KEY_ALIAS" value="MohamedEmad126" />
     <option name="REMEMBER_PASSWORDS" value="true" />
-    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,12 +65,12 @@
   <component name="ProjectId" id="1a5DgWdWssmMIC9X0BLHdbnD8Hk" />
   <component name="PropertiesComponent">
     <property name="ApkExportedModule" value="app" />
+    <property name="BundleExportedModule" value="app" />
     <property name="ExportApk.ApkPath" value="E:\Programming\Android\Projects\COVID19\app" />
     <property name="ExportApk.BuildVariants" value="release" />
-    <property name="ExportApk.SignV2" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InfinityChat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Key" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
@@ -213,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586119953944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Completed...">
+      <created>1586182480963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586182480963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +197,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete WorldFragment...." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete WorldFragment...." />
+    <MESSAGE value="Completed..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed..." />
   </component>
 </project>
