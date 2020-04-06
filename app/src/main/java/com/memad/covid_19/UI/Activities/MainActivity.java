@@ -1,5 +1,8 @@
 package com.memad.covid_19.UI.Activities;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
@@ -7,10 +10,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
-import android.content.Intent;
-import android.os.Bundle;
-
-import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.memad.covid_19.R;
 import com.memad.covid_19.ViewModels.EgyptViewModel;
@@ -34,10 +33,16 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView.setOnNavigationItemReselectedListener(item -> {
             if(item.getItemId() == R.id.egyptFragment){
-                egyptViewModel.refresh();
+                if(egyptViewModel.getIsLoading().getValue()!= null
+                        && !egyptViewModel.getIsLoading().getValue()){
+                    egyptViewModel.refresh();
+                }
             }
             else if(item.getItemId() == R.id.worldFragment){
-                worldViewModel.refresh();
+                if(worldViewModel.getIsLoading().getValue()!= null
+                        && !worldViewModel.getIsLoading().getValue()){
+                    worldViewModel.refresh();
+                }
             }
         });
 

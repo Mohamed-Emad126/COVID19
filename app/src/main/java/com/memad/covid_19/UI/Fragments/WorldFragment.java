@@ -1,21 +1,20 @@
 package com.memad.covid_19.UI.Fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.button.MaterialButton;
 import com.memad.covid_19.Adapters.WorldAdapter;
@@ -30,6 +29,8 @@ public class WorldFragment extends Fragment {
     }
 
     private WorldViewModel viewModel;
+    private RecyclerView recyclerView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,9 +48,11 @@ public class WorldFragment extends Fragment {
         LinearLayout errorPage = rootView.findViewById(R.id.error_linear_layout);
         LinearLayout noNetworkPage = rootView.findViewById(R.id.network_linear_layout);
 
-        RecyclerView recyclerView = rootView.findViewById(R.id.recycler);
+        FragmentActivity activity = getActivity();
+
+        recyclerView = rootView.findViewById(R.id.recycler);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(requireActivity()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(activity));
         WorldAdapter adapter = new WorldAdapter();
         recyclerView.setSaveEnabled(true);
         recyclerView.setAdapter(adapter);
@@ -61,19 +64,18 @@ public class WorldFragment extends Fragment {
         viewModel.getAllCountries();
 
 
-        errorPageRefresh.setOnClickListener(view ->{
+        errorPageRefresh.setOnClickListener(view -> {
             viewModel.setIsFirstLoading(true);
             viewModel.refresh();
         });
-        networkRefresh.setOnClickListener(view ->{
+        networkRefresh.setOnClickListener(view -> {
             viewModel.setIsFirstLoading(true);
             viewModel.refresh();
         });
 
 
-
-        if(NetworkUtils.getConnectivityStatus(
-                requireActivity().getApplicationContext()) == 0){
+        if (NetworkUtils.getConnectivityStatus(
+                requireActivity().getApplicationContext()) == 0) {
             noNetworkPage.setVisibility(View.VISIBLE);
             recyclerView.setVisibility(View.GONE);
             errorPage.setVisibility(View.GONE);
@@ -82,16 +84,16 @@ public class WorldFragment extends Fragment {
 
 
         viewModel.getAllCountries().observe(requireActivity(), countries -> {
-            adapter.setCountriesList(countries);
-            noNetworkPage.setVisibility(View.GONE);
-            recyclerView.setVisibility(View.VISIBLE);
-            errorPage.setVisibility(View.GONE);
-            progressBar.setVisibility(View.GONE);
+                    adapter.setCountriesList(countries);
+                    noNetworkPage.setVisibility(View.GONE);
+                    recyclerView.setVisibility(View.VISIBLE);
+                    errorPage.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.GONE);
                 }
         );
 
         viewModel.getIsFirstLoading().observe(requireActivity(), aBoolean -> {
-            if(aBoolean){
+            if (aBoolean) {
                 refreshLayout.setRefreshing(false);
                 noNetworkPage.setVisibility(View.GONE);
                 recyclerView.setVisibility(View.GONE);
@@ -109,25 +111,24 @@ public class WorldFragment extends Fragment {
         );
 
         viewModel.getIsLoading().observe(requireActivity(), aBoolean -> {
-            if(aBoolean){
-                if(viewModel.getIsFirstLoading().getValue()!= null &&
-                        !viewModel.getIsFirstLoading().getValue()){
+            if (aBoolean) {
+                if (viewModel.getIsFirstLoading().getValue() != null &&
+                        !viewModel.getIsFirstLoading().getValue()) {
                     refreshLayout.setRefreshing(true);
                 }
-            }
-            else{
+            } else {
                 refreshLayout.setRefreshing(false);
             }
         });
 
         viewModel.getIsError().observe(requireActivity(), aBoolean -> {
-            if(aBoolean){
+            if (aBoolean) {
                 refreshLayout.setRefreshing(false);
                 totalCases.setText("-");
                 totalDeaths.setText("-");
                 recovered.setText("-");
-                if(NetworkUtils.getConnectivityStatus(
-                        requireActivity()) != 0){
+                if (NetworkUtils.getConnectivityStatus(
+                        activity) != 0) {
 
                     noNetworkPage.setVisibility(View.GONE);
                     recyclerView.setVisibility(View.GONE);
@@ -136,8 +137,7 @@ public class WorldFragment extends Fragment {
                     /*Toast.makeText(requireActivity().getApplicationContext(),
                             R.string.wrong, Toast.LENGTH_SHORT).show();*/
 
-                }
-                else{
+                } else {
                     noNetworkPage.setVisibility(View.VISIBLE);
                     recyclerView.setVisibility(View.GONE);
                     errorPage.setVisibility(View.GONE);
@@ -149,17 +149,15 @@ public class WorldFragment extends Fragment {
         });
 
         refreshLayout.setOnRefreshListener(() -> {
-            if(NetworkUtils.getConnectivityStatus(
-                    requireActivity().getApplicationContext()) != 0){
+            if (NetworkUtils.getConnectivityStatus(
+                    activity.getApplicationContext()) != 0) {
                 viewModel.refresh();
-            }
-            else{
+            } else {
                 Toast.makeText(requireActivity().getApplicationContext(),
                         R.string.update_no_connection, Toast.LENGTH_SHORT).show();
                 refreshLayout.setRefreshing(false);
             }
         });
-
 
 
         return rootView;

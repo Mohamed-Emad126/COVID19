@@ -1,16 +1,16 @@
 package com.memad.covid_19.UI.Fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.memad.covid_19.R;
 import com.memad.covid_19.Utils.NetworkUtils;
@@ -48,36 +48,7 @@ public class EgyptFragment extends Fragment {
         viewModel = new ViewModelProvider(requireActivity()).get(EgyptViewModel.class);
         viewModel.getEgypt();
 
-        /*if(NetworkUtils.getConnectivityStatus(requireActivity().getApplicationContext()) != 0)
-        {
-            viewModel.getEgypt().observe(requireActivity(), country -> {
-                totalCases.setText(String.valueOf(country.getCases()));
-                todayCases.setText(String.valueOf(country.getTodayCases()));
-                totalDeaths.setText(String.valueOf(country.getDeaths()));
-                todayDeaths.setText(String.valueOf(country.getTodayDeaths()));
-                deathsPerOneMillion.setText(String.valueOf(country.getDeathsPerOneMillion()));
-                casesPerOneMillion.setText(String.valueOf(country.getCasesPerOneMillion()));
-                recovered.setText(String.valueOf(country.getRecovered()));
-                active.setText(String.valueOf(country.getActive()));
-                critical.setText(String.valueOf(country.getCritical()));
-
-                    }
-            );
-        }
-        else
-            {
-            refreshLayout.setRefreshing(false);
-            totalCases.setText("-");
-            todayCases.setText("-");
-            totalDeaths.setText("-");
-            todayDeaths.setText("-");
-            deathsPerOneMillion.setText("-");
-            casesPerOneMillion.setText("-");
-            recovered.setText("-");
-            active.setText("-");
-            critical.setText("-");
-            Toast.makeText(requireActivity().getApplicationContext(), R.string.network_connection, Toast.LENGTH_SHORT).show();
-        }*/
+        FragmentActivity activity = getActivity();
 
         viewModel.getEgypt().observe(requireActivity(), country -> {
                     totalCases.setText(String.valueOf(country.getCases()));
@@ -94,16 +65,15 @@ public class EgyptFragment extends Fragment {
         );
 
         viewModel.getIsLoading().observe(requireActivity(), aBoolean -> {
-            if(aBoolean){
+            if (aBoolean) {
                 refreshLayout.setRefreshing(true);
-            }
-            else{
+            } else {
                 refreshLayout.setRefreshing(false);
             }
         });
 
         viewModel.getIsError().observe(requireActivity(), aBoolean -> {
-            if(aBoolean){
+            if (aBoolean) {
                 refreshLayout.setRefreshing(false);
                 totalCases.setText("-");
                 todayCases.setText("-");
@@ -114,29 +84,30 @@ public class EgyptFragment extends Fragment {
                 recovered.setText("-");
                 active.setText("-");
                 critical.setText("-");
-                if(NetworkUtils.getConnectivityStatus(
-                        requireActivity()) != 0){
 
-                    Toast.makeText(requireActivity().getApplicationContext(),
+                if (NetworkUtils.getConnectivityStatus(
+                        activity) != 0) {
+
+                    Toast.makeText(activity.getApplicationContext(),
                             R.string.wrong, Toast.LENGTH_SHORT).show();
 
-                }
-                else{
-                    Toast.makeText(requireActivity().getApplicationContext(),
+                } else {
+                    Toast.makeText(activity.getApplicationContext(),
                             R.string.network_connection, Toast.LENGTH_SHORT).show();
                 }
+                viewModel.reSet();
             }
         });
 
         refreshLayout.setOnRefreshListener(() -> {
-            if(NetworkUtils.getConnectivityStatus(
-                    requireActivity().getApplicationContext()) != 0){
+            if (NetworkUtils.getConnectivityStatus(
+                    activity.getApplicationContext()) != 0) {
                 viewModel.refresh();
-            }
-            else{
-                Toast.makeText(requireActivity().getApplicationContext(),
+            } else {
+                Toast.makeText(activity.getApplicationContext(),
                         R.string.network_connection, Toast.LENGTH_SHORT).show();
                 refreshLayout.setRefreshing(false);
+                viewModel.reSet();
             }
         });
 

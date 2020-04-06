@@ -1,24 +1,24 @@
 <resources>
     <string name="app_name">COVID-19</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="egypt">Egypt</string>
     <string name="all_cases">All Cases</string>
-    <string name="world">World</string>
+    <string name="world">Worldwide</string>
     <string name="share_app">Share App</string>
-    <string name="licences">Licences</string>
-    <string name="about">About</string>
+    <string name="licences" translatable="false">Licences</string>
+    <string name="about">About Virus</string>
     <string name="advices">Advices</string>
     <string name="emergency">Emergency</string>
     <string name="image_resource">Image Resources</string>
-    <string name="flat_icons_site">Flat Icons Site</string>
+    <string name="flat_icons_site" translatable="false">Flat Icons Site</string>
     <string name="gif_resources">Gif Resources</string>
-    <string name="made_with_love">Made with love by <b>Mohamed Emad</b> \n stay safe</string>
+    <string name="made_with_love" translatable="false">Made with love by <b>Mohamed Emad</b>\nstay safe</string>
     <string name="how_it_spreads">How it spreads</string>
-    <string name="stay_safe_n">Stay safe \nstay Home</string>
+    <string name="stay_safe_n">Stay safe\nstay Home</string>
     <string name="spread">Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth.</string>
     <string name="about_corona">The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</string>
-    <string name="corona_name">Coronavirus disease (COVID‑19) Also called: 2019-nCov, 2019 Novel Coronavirus</string>
+    <string name="corona_name">Coronavirus disease (COVID‑19) Also called: 2019-nCov, 2019 Novel Corona Virus</string>
     <string name="total_cases">Total cases</string>
     <string name="recovered">Recovered</string>
     <string name="critical">Critical</string>
@@ -36,19 +36,38 @@
     <string name="active_c">Active:</string>
     <string name="recovered_c">Recovered:</string>
     <string name="more">More</string>
-    <string name="_105">105</string>
+    <string name="_105" translatable="false">105</string>
     <string name="call">Call</string>
-    <string name="_15335">15335</string>
+    <string name="_15335" translatable="false">15335</string>
     <string name="granted">Permission GRANTED</string>
     <string name="denied">Permission DENIED</string>
     <string name="permission_nedded">Permission needed</string>
-    <string name="permission_reason">This permission is needed so that The app can Call the Emergency Number</string>
+    <string name="permission_reason">This permission is needed so that The app can Call the Emergency Numbers</string>
     <string name="ok">OK</string>
     <string name="cancel">CANCEL</string>
     <string name="today_deaths">Today Deaths</string>
     <string name="no_network_con">No Network Connection\ncheck your connection and try again</string>
     <string name="refresh">REFRESH</string>
     <string name="today_cases">Today cases</string>
-    <string name="something_went_wrong_">Something went wrong\ncheck your Internet connection and Try again later!</string>
+    <string name="something_went_wrong_">Something went wrong\ncheck your Internet connection and Try again!</string>
     <string name="update_no_connection">No Network Connection to Update</string>
+    <string name="ministry_of_health_hotlines">Ministry of Health Hotline</string>
+    <string name="psychological_support">Two Hotlines to provide psychological support to citizens in homes during this period.</string>
+    <string name="advice_1">Always clean hands by rubbing them with an alcohol disinfectant or washing them thoroughly with soap and water</string>
+    <string name="advice_2">When greeting guests at home, the salutation is one meter away through: hand-waving, gesture or bending.</string>
+    <string name="advice_3">Have everyone at home wash their hands, including guests.</string>
+    <string name="advice_4">Constant cleaning of surfaces and especially touched objects.</string>
+    <string name="advice_5">If you develop symptoms of the emerging coronavirus, contact your healthcare professional before going.</string>
+    <string name="advice_6">Keep up-to-date on the virus, from reliable sources.</string>
+    <string name="advice_7">When coughing and sneezing, be sure to cover your mouth and nose with your folded elbow or a tissue, and dispose of the tissue immediately and wash your hands.</string>
+    <string name="advice_8">Avoid approaching people with fever and cough, and keep a distance of at least one meter (3 feet).</string>
+    <string name="advice_9">The masks should not be reused and not touched from the front. The use of the N95 respirator mask protects against the virus only when used properly.</string>
+    <string name="advice_10">Antibiotics are not effective in preventing the virus, they only kill the germs.</string>
+    <string name="advice_11">Hand dryers are not effective in eliminating the virus within 30 seconds. Rather, hands should be cleaned by rubbing them with an alcohol disinfectant, or washed with soap and water and then used dryers.</string>
+    <string name="advice_12">Spraying the body with alcohol or chlorine does not help eliminate the virus, but it may be harmful to clothing or mucous membranes (such as the eyes and mouth).</string>
+    <string name="advice_13">Regularly washing the nose with a saline solution does not prevent HIV infection.</string>
+    <string name="advice_15">Avoid touching your eyes, nose and mouth.</string>
+    <string name="advice_16">If someone in the audience feels it is not well (especially if its symptoms are positive for the emerging coronavirus), be careful not to share the places together.</string>
+    <string name="advice_17">Make a preparatory plan for you if the virus spreads in your community.</string>
+    <string name="advice_18">"If you leave the house, try to adhere to all instructions as if you were at home   "</string>
 </resources>

@@ -19,7 +19,7 @@
         android:id="@+id/symptomsFragment"
         android:name="com.memad.covid_19.UI.Fragments.AdvicesFragment"
         android:label="fragment_symptoms"
-        tools:layout="@layout/fragment_symptoms" />
+        tools:layout="@layout/fragment_advices" />
     <fragment
         android:id="@+id/emergencyFragment"
         android:name="com.memad.covid_19.UI.Fragments.EmergencyFragment"

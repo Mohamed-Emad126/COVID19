@@ -37,8 +37,19 @@
                     />
             </FrameLayout>
 
-            <include layout="@layout/no_network_page" />
-            <include layout="@layout/error_page" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                    <include layout="@layout/no_network_page" />
+                    <include layout="@layout/error_page" />
+                </FrameLayout>
+            </ScrollView>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler"
                 android:layout_width="match_parent"

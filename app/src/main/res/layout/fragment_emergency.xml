@@ -11,21 +11,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:background="@android:color/white"
-        android:padding="20dp"
         tools:context=".UI.Fragments.EmergencyFragment">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-
-            android:layout_height="150dp"
-            android:padding="24dp"
+            android:layout_height="100dp"
+            android:padding="8dp"
             android:src="@drawable/ic_emergency"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textView"
+
+            />
 
         <TextView
             android:id="@+id/textView"
@@ -34,7 +34,7 @@
             android:layout_margin="16sp"
             android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:text="@string/emergency"
+            android:text="@string/ministry_of_health_hotlines"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
@@ -42,60 +42,162 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+        <LinearLayout
+            android:id="@+id/_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:text="@string/_105"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                 />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/first_number_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:rippleColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/_153"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/_15"
+            >
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:text="@string/_15335"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                 />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/second_number_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:rippleColor="@android:color/white" />
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16sp"
+            android:fontFamily="sans-serif-light"
             android:gravity="center"
-            android:text="@string/_105"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
+            android:text="@string/psychological_support"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/_153" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/first_number_call"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/call"
-            app:backgroundTint="@color/colorPrimaryDark"
-            app:cornerRadius="12dp"
-            android:gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:rippleColor="@android:color/white" />
-
-        <TextView
-            android:id="@+id/textView3"
+        <LinearLayout
+            android:id="@+id/_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_margin="16sp"
-            android:gravity="center"
-            android:text="@string/_15335"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/first_number_call" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:text="080-8880700"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/second_number_call"
-            android:layout_width="wrap_content"
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/third_number_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:rippleColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/_4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/call"
-            android:gravity="center"
-            app:backgroundTint="@color/colorPrimaryDark"
-            app:cornerRadius="12dp"
+            android:orientation="horizontal"
+            android:layout_margin="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:rippleColor="@android:color/white"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/_3"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:text="0220816831"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fourth_number_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:rippleColor="@android:color/white" />
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,7 @@ public class EgyptViewModel extends ViewModel {
     }
 
     public LiveData<Country> getEgypt() {
-        if(egypt == null){
+        if (egypt == null) {
             egypt = new MutableLiveData<>();
             getNewCases();
         }
@@ -40,10 +40,9 @@ public class EgyptViewModel extends ViewModel {
             @Override
             public void onResponse(Call<Country> call, Response<Country> response) {
                 isLoading.postValue(false);
-                if(response.isSuccessful()){
+                if (response.isSuccessful()) {
                     egypt.postValue(response.body());
-                }
-                else{
+                } else {
                     isError.postValue(true);
                 }
             }
@@ -56,8 +55,12 @@ public class EgyptViewModel extends ViewModel {
         });
     }
 
-    public void refresh(){
+    public void refresh() {
         getNewCases();
     }
 
+    public void reSet() {
+        isError.setValue(false);
+        isLoading.setValue(false);
+    }
 }

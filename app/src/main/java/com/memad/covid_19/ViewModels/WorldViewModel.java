@@ -17,7 +17,7 @@ import retrofit2.Response;
 public class WorldViewModel extends ViewModel {
 
     MutableLiveData<List<Country>> countries;
-    MutableLiveData <AllCases> allCases;
+    MutableLiveData<AllCases> allCases;
     MutableLiveData<Boolean> isLoading = new MutableLiveData<>();
     MutableLiveData<Boolean> isFirstLoading = new MutableLiveData<>();
     MutableLiveData<Boolean> isError = new MutableLiveData<>();
@@ -38,8 +38,8 @@ public class WorldViewModel extends ViewModel {
         return isFirstLoading;
     }
 
-    public LiveData<AllCases> getAllCases(){
-        if (allCases == null ){
+    public LiveData<AllCases> getAllCases() {
+        if (allCases == null) {
             isFirstLoading.postValue(true);
             allCases = new MutableLiveData<>();
             getWorldCases();
@@ -56,10 +56,9 @@ public class WorldViewModel extends ViewModel {
             public void onResponse(Call<AllCases> call, Response<AllCases> response) {
                 isLoading.postValue(false);
                 isFirstLoading.postValue(false);
-                if(response.isSuccessful()){
+                if (response.isSuccessful()) {
                     allCases.postValue(response.body());
-                }
-                else{
+                } else {
                     isError.postValue(true);
                 }
             }
@@ -74,7 +73,7 @@ public class WorldViewModel extends ViewModel {
     }
 
     public LiveData<List<Country>> getAllCountries() {
-        if(countries == null){
+        if (countries == null) {
             isFirstLoading.postValue(true);
             countries = new MutableLiveData<>();
             getCountriesCases();
@@ -91,10 +90,9 @@ public class WorldViewModel extends ViewModel {
             public void onResponse(Call<List<Country>> call, Response<List<Country>> response) {
                 isLoading.postValue(false);
                 isFirstLoading.postValue(false);
-                if(response.isSuccessful()){
+                if (response.isSuccessful()) {
                     countries.postValue(response.body());
-                }
-                else{
+                } else {
                     isError.postValue(true);
                 }
             }
@@ -108,7 +106,7 @@ public class WorldViewModel extends ViewModel {
         });
     }
 
-    public void refresh(){
+    public void refresh() {
         getWorldCases();
         getCountriesCases();
     }
