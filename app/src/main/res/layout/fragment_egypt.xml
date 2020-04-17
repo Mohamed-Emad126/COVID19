@@ -6,27 +6,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
     tools:context=".UI.Fragments.EgyptFragment">
-
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none"
-            android:overScrollMode="never"
-            >
+            android:overScrollMode="never">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:paddingTop="8dp"
-                >
-
+                android:paddingTop="8dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -37,14 +32,11 @@
                     android:textStyle="bold"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp" />
-                
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="8dp"
-                    >
-                    
+                    android:layout_marginTop="8dp">
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -53,8 +45,7 @@
                         android:padding="8dp"
                         android:background="?selectableItemBackground"
                         android:layout_margin="8dp"
-                        app:cardBackgroundColor="@android:color/holo_orange_dark"
-                        >
+                        app:cardBackgroundColor="@android:color/holo_orange_dark">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -70,8 +61,7 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="bold"
-                                />
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -81,12 +71,9 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="normal"
-                                />
+                                android:textStyle="normal" />
                         </LinearLayout>
-
                     </androidx.cardview.widget.CardView>
-
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -95,8 +82,7 @@
                         android:padding="8dp"
                         android:background="?selectableItemBackground"
                         android:layout_margin="8dp"
-                        app:cardBackgroundColor="@android:color/holo_orange_light"
-                        >
+                        app:cardBackgroundColor="@android:color/holo_orange_light">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -112,8 +98,7 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="bold"
-                                />
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -123,20 +108,15 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="normal"
-                                />
+                                android:textStyle="normal" />
                         </LinearLayout>
-
                     </androidx.cardview.widget.CardView>
-                    
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="16dp"
-                    >
-
+                    android:layout_marginTop="16dp">
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -145,8 +125,7 @@
                         android:padding="8dp"
                         android:background="?selectableItemBackground"
                         android:layout_margin="8dp"
-                        app:cardBackgroundColor="@android:color/black"
-                        >
+                        app:cardBackgroundColor="@android:color/black">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -162,8 +141,7 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="bold"
-                                />
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -173,12 +151,9 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="normal"
-                                />
+                                android:textStyle="normal" />
                         </LinearLayout>
-
                     </androidx.cardview.widget.CardView>
-
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -187,8 +162,7 @@
                         android:padding="8dp"
                         android:background="?selectableItemBackground"
                         android:layout_margin="8dp"
-                        app:cardBackgroundColor="@android:color/holo_red_dark"
-                        >
+                        app:cardBackgroundColor="@android:color/holo_red_dark">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -204,8 +178,7 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="bold"
-                                />
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -215,14 +188,10 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="normal"
-                                />
+                                android:textStyle="normal" />
                         </LinearLayout>
-
                     </androidx.cardview.widget.CardView>
-
                 </LinearLayout>
-
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -233,14 +202,12 @@
                     android:layout_marginBottom="8dp"
                     android:background="?selectableItemBackground"
                     android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="@android:color/holo_green_light"
-                    >
+                    app:cardBackgroundColor="@android:color/holo_green_light">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="8dp"
                         android:orientation="vertical">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -250,8 +217,7 @@
                             android:textColor="@android:color/white"
                             android:layout_gravity="start"
                             android:gravity="start"
-                            android:textStyle="normal"
-                            />
+                            android:textStyle="normal" />
                         <TextView
                             android:id="@+id/recovered_num"
                             android:layout_width="wrap_content"
@@ -263,19 +229,14 @@
                             android:textColor="@android:color/white"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="16dp"
-                    >
-
+                    android:layout_marginTop="16dp">
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -284,8 +245,7 @@
                         android:layout_weight="1"
                         android:padding="8dp"
                         android:layout_margin="8dp"
-                        app:cardBackgroundColor="@android:color/holo_red_light"
-                        >
+                        app:cardBackgroundColor="@android:color/holo_red_light">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -301,9 +261,7 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="start"
                                 android:gravity="start"
-                                android:textStyle="normal"
-                                />
-
+                                android:textStyle="normal" />
                             <TextView
                                 android:id="@+id/critical_num"
                                 android:layout_width="wrap_content"
@@ -315,13 +273,9 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="bold"
-                                />
-
+                                android:textStyle="bold" />
                         </LinearLayout>
-
                     </androidx.cardview.widget.CardView>
-
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -330,8 +284,7 @@
                         android:layout_weight="1"
                         android:padding="8dp"
                         android:layout_margin="8dp"
-                        app:cardBackgroundColor="@android:color/holo_orange_light"
-                        >
+                        app:cardBackgroundColor="@android:color/holo_orange_light">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -347,9 +300,7 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="start"
                                 android:gravity="start"
-                                android:textStyle="normal"
-                                />
-
+                                android:textStyle="normal" />
                             <TextView
                                 android:id="@+id/active_num"
                                 android:layout_width="wrap_content"
@@ -361,19 +312,14 @@
                                 android:textColor="@android:color/white"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:textStyle="bold"
-                                />
-
+                                android:textStyle="bold" />
                         </LinearLayout>
-
                     </androidx.cardview.widget.CardView>
-
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:orientation="vertical">
-
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -381,8 +327,7 @@
                             android:background="?selectableItemBackground"
                             android:padding="8dp"
                             android:layout_margin="8dp"
-                            app:cardBackgroundColor="@android:color/holo_orange_dark"
-                            >
+                            app:cardBackgroundColor="@android:color/holo_orange_dark">
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -398,8 +343,7 @@
                                     android:textColor="@android:color/white"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:textStyle="bold"
-                                    />
+                                    android:textStyle="bold" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -409,12 +353,9 @@
                                     android:textColor="@android:color/white"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:textStyle="normal"
-                                    />
+                                    android:textStyle="normal" />
                             </LinearLayout>
-
                         </androidx.cardview.widget.CardView>
-
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -422,8 +363,7 @@
                             android:background="?selectableItemBackground"
                             android:padding="8dp"
                             android:layout_margin="8dp"
-                            app:cardBackgroundColor="@android:color/black"
-                            >
+                            app:cardBackgroundColor="@android:color/black">
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -439,8 +379,7 @@
                                     android:textColor="@android:color/white"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:textStyle="bold"
-                                    />
+                                    android:textStyle="bold" />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -450,23 +389,13 @@
                                     android:textColor="@android:color/white"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:textStyle="normal"
-                                    />
+                                    android:textStyle="normal" />
                             </LinearLayout>
-
                         </androidx.cardview.widget.CardView>
-
                     </LinearLayout>
-
                 </LinearLayout>
-                    
-
-
             </LinearLayout>
-
-
         </ScrollView>
-
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 

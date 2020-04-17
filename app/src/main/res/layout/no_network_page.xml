@@ -9,12 +9,10 @@
     android:orientation="vertical"
     android:gravity="center"
     android:visibility="gone">
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:src="@drawable/ic_internet" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +20,6 @@
         android:padding="16dp"
         android:text="@string/no_network_con"
         android:textColor="@android:color/holo_red_dark" />
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/no_network_refresh"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -32,5 +29,4 @@
         android:text="@string/refresh"
         app:rippleColor="@color/colorPrimary"
         app:strokeColor="@color/colorPrimaryDark" />
-
 </LinearLayout>

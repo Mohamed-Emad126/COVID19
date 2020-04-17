@@ -7,13 +7,11 @@
     android:background="@android:color/white"
     android:overScrollMode="never"
     android:scrollbars="none">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
         tools:context=".UI.Fragments.EmergencyFragment">
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -23,10 +21,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/textView"
-
-            />
-
+            app:layout_constraintBottom_toTopOf="@id/textView" />
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -41,7 +36,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
         <LinearLayout
             android:id="@+id/_15"
             android:layout_width="match_parent"
@@ -50,8 +44,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_margin="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            >
+            app:layout_constraintTop_toBottomOf="@+id/textView">
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="0dp"
@@ -63,11 +56,9 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="20sp"
-                 />
-
+                android:textSize="20sp" />
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/first_number_call"
+                android:id="@+id/_105_number_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/call"
@@ -77,7 +68,6 @@
                 android:gravity="center"
                 app:rippleColor="@android:color/white" />
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/_153"
             android:layout_width="match_parent"
@@ -86,8 +76,7 @@
             android:layout_margin="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/_15"
-            >
+            app:layout_constraintTop_toBottomOf="@+id/_15">
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="0dp"
@@ -99,11 +88,9 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="20sp"
-                 />
-
+                android:textSize="20sp" />
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/second_number_call"
+                android:id="@+id/_15535_number_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/call"
@@ -113,7 +100,6 @@
                 android:gravity="center"
                 app:rippleColor="@android:color/white" />
         </LinearLayout>
-
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
@@ -128,7 +114,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/_153" />
-
         <LinearLayout
             android:id="@+id/_3"
             android:layout_width="match_parent"
@@ -137,8 +122,7 @@
             android:layout_margin="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            >
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -149,11 +133,10 @@
                 android:textAllCaps="true"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black"
-                android:textSize="20sp"
-                />
+                android:textSize="20sp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/third_number_call"
+                android:id="@+id/_080_number_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/call"
@@ -163,7 +146,6 @@
                 android:gravity="center"
                 app:rippleColor="@android:color/white" />
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/_4"
             android:layout_width="match_parent"
@@ -172,8 +154,7 @@
             android:layout_margin="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/_3"
-            >
+            app:layout_constraintTop_toBottomOf="@+id/_3">
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -184,11 +165,9 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
-                android:textSize="20sp"
-                />
-
+                android:textSize="20sp" />
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/fourth_number_call"
+                android:id="@+id/_022_number_call"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/call"
@@ -198,8 +177,5 @@
                 android:gravity="center"
                 app:rippleColor="@android:color/white" />
         </LinearLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>

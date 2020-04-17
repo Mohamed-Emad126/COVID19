@@ -16,7 +16,7 @@ public interface COVIDClient {
     @GET("countries/egy")
     Call<Country> getEgyptCases();
 
-    @GET("countries?sort=totalCases")
+    @GET("countries?sort=todayCases")
     Call<List<Country>> getAllCountries();
 
 }

@@ -35,12 +35,12 @@ public class EmergencyFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_emergency, container, false);
 
-        MaterialButton firstCallButton = rootView.findViewById(R.id.first_number_call);
-        MaterialButton secondCallButton = rootView.findViewById(R.id.second_number_call);
-        MaterialButton thirdCallButton = rootView.findViewById(R.id.third_number_call);
-        MaterialButton fourthCallButton = rootView.findViewById(R.id.fourth_number_call);
+        MaterialButton callButton105 = rootView.findViewById(R.id._105_number_call);
+        MaterialButton callButton1553 = rootView.findViewById(R.id._15535_number_call);
+        MaterialButton callButton080 = rootView.findViewById(R.id._080_number_call);
+        MaterialButton callButton022 = rootView.findViewById(R.id._022_number_call);
 
-        firstCallButton.setOnClickListener(view -> {
+        callButton105.setOnClickListener(view -> {
             if (ContextCompat.checkSelfPermission(requireActivity(),
                     Manifest.permission.CALL_PHONE)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -51,7 +51,7 @@ public class EmergencyFragment extends Fragment {
             }
         });
 
-        secondCallButton.setOnClickListener(view -> {
+        callButton1553.setOnClickListener(view -> {
             if (ContextCompat.checkSelfPermission(requireActivity(),
                     Manifest.permission.CALL_PHONE)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -61,7 +61,7 @@ public class EmergencyFragment extends Fragment {
                 dialPhoneNumber("15335");
             }
         });
-        thirdCallButton.setOnClickListener(view -> {
+        callButton080.setOnClickListener(view -> {
             if (ContextCompat.checkSelfPermission(requireActivity(),
                     Manifest.permission.CALL_PHONE)
                     != PackageManager.PERMISSION_GRANTED) {
@@ -71,7 +71,7 @@ public class EmergencyFragment extends Fragment {
                 dialPhoneNumber("080-8880700");
             }
         });
-        fourthCallButton.setOnClickListener(view -> {
+        callButton022.setOnClickListener(view -> {
             if (ContextCompat.checkSelfPermission(requireActivity(),
                     Manifest.permission.CALL_PHONE)
                     != PackageManager.PERMISSION_GRANTED) {

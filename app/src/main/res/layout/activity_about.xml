@@ -7,13 +7,10 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     tools:context=".UI.Activities.AboutActivity">
-
     <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/about_appbar"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            >
-
+            android:layout_height="?actionBarSize">
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/about_toolbar"
                 android:layout_width="match_parent"
@@ -21,15 +18,12 @@
                 app:navigationIcon="@drawable/ic_back"
                 app:title="@string/about"
                 app:titleTextColor="@android:color/white"
-                android:theme="@style/Widget.AppCompat.PopupMenu.Overflow"
-                />
+                android:theme="@style/Widget.AppCompat.PopupMenu.Overflow" />
         </com.google.android.material.appbar.AppBarLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        >
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +37,6 @@
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 app:lottie_rawRes="@raw/data" />
-
             <TextView
                 android:id="@+id/name_app"
                 android:layout_width="wrap_content"
@@ -51,13 +44,11 @@
                 android:layout_gravity="center"
                 android:text="@string/app_name"
                 android:textColor="@color/colorPrimaryDark" />
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp">
-
                 <View
                     android:id="@+id/divider"
                     android:layout_width="150dp"
@@ -65,13 +56,11 @@
                     android:layout_height="1dp"
                     android:background="#F5F5F5" />
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?selectableItemBackground"
                 android:layout_marginTop="30dp">
-
                 <TextView
                     android:id="@+id/text3"
                     android:layout_width="wrap_content"
@@ -81,29 +70,24 @@
                     android:textStyle="normal"
                     android:textColor="@android:color/black" />
             </LinearLayout>
-
             <LinearLayout
                 android:id="@+id/flat1_icons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:orientation="vertical">
-
                 <TextView
                     android:id="@+id/text4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/about_corona"
                     android:textColor="?android:textColorSecondary" />
-
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp">
-
                 <View
                     android:id="@+id/dividerx"
                     android:layout_width="150dp"
@@ -111,7 +95,6 @@
                     android:layout_height="1dp"
                     android:background="#F5F5F5" />
             </LinearLayout>
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,14 +103,12 @@
                 android:gravity="center"
                 android:layout_marginTop="16dp"
                 android:textColor="@android:color/black" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="?selectableItemBackground"
                 android:orientation="vertical">
-
                 <TextView
                     android:id="@+id/tex5"
                     android:layout_width="wrap_content"
@@ -138,13 +119,11 @@
                     android:text="@string/spread"
                     android:textColor="?android:textColorSecondary" />
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp">
-
                 <View
                     android:id="@+id/dividerxx"
                     android:layout_width="150dp"
@@ -152,17 +131,13 @@
                     android:layout_height="1dp"
                     android:background="#F5F5F5" />
             </LinearLayout>
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="?android:textColorSecondary"
                 android:layout_marginTop="24dp"
                 android:gravity="center"
-                android:text="@string/stay_safe_n"
-                />
+                android:text="@string/stay_safe_n" />
         </LinearLayout>
     </ScrollView>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

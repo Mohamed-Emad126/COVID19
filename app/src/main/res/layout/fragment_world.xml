@@ -8,44 +8,33 @@
     android:orientation="vertical"
     android:background="@android:color/white"
     tools:context=".UI.Fragments.WorldFragment">
-
     <include layout="@layout/world_top" />
-
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
-            >
-
+            android:background="@android:color/white">
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:visibility="gone"
-                android:id="@+id/progressBar"
-
-                >
+                android:id="@+id/progressBar">
                 <ProgressBar
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
             </FrameLayout>
-
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    >
+                    android:layout_gravity="center">
                     <include layout="@layout/no_network_page" />
                     <include layout="@layout/error_page" />
                 </FrameLayout>
@@ -54,13 +43,6 @@
                 android:id="@+id/recycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-
         </FrameLayout>
-
-
-
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-
-
 </LinearLayout>
